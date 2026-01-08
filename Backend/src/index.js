@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 import authRoutes from './routes/auth.route.js';
 import messageRoutes from './routes/message.route.js';
@@ -12,6 +13,7 @@ import { app, server } from './lib/socket.js';
 
 dotenv.config();
 const port = process.env.PORT;
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.resolve;
 
 app.use(express.json({ limit: "5mb" }));
