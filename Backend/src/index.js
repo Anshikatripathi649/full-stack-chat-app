@@ -12,7 +12,7 @@ import { app, server } from './lib/socket.js';
 
 dotenv.config();
 const port = process.env.PORT;
-// const __dirname = path.resolve;
+const __dirname = path.resolve;gi
 
 app.use(express.json({ limit: "5mb" }));
 app.use(express.urlencoded({ limit: "5mb", extended: true }));
