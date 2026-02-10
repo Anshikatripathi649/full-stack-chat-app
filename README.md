@@ -1,9 +1,8 @@
 # 💬 Full Stack Chat Application
 
 A real-time chat application built with the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO for instant messaging capabilities.
-
-![Chat Application](<img width="1914" height="1022" alt="Screenshot 2026-02-10 134434" src="https://github.com/user-attachments/assets/13b79eae-6460-43d2-bd6c-04b6f8f66572" />
-)
+<img width="1914" height="1022" alt="Screenshot 2026-02-10 134434" src="https://github.com/user-attachments/assets/13b79eae-6460-43d2-bd6c-04b6f8f66572" />
+![Chat Application](https://img.shields.io/badge/Status-Production-success )
 ![Node.js](https://img.shields.io/badge/Node.js-22.x-green)
 ![React](https://img.shields.io/badge/React-18.x-blue)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Latest-green)
