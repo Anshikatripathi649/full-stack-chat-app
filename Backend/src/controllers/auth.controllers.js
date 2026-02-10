@@ -14,7 +14,7 @@ export const signup = async (req, res) => {
         }
         let user = await User.findOne({email});
         if(user) {
-            return res.status(400).json({message:"User already exits with this email"});
+            return res.status(400).json({message:"Email already exists"});
         } 
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
@@ -29,7 +29,7 @@ export const signup = async (req, res) => {
             // generate jwt token here
             console.log(newUser._id);
             await newUser.save();
-            generateToken(newUser._id,res);
+            generateToken(newUser._id, res);
             // res.status(200).json({message:"User Signin Successsfully"});
             res.status(201).json(
                 {
